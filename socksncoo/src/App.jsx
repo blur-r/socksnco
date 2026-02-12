@@ -1,10 +1,28 @@
 import bgImage from './assets/IMG_3417.PNG'
 import ProductCard from './component/ProductCard'
+import { useEffect, useState } from 'react'
 
 function App() {
+
+  const [scrolled, setScrolled] = useState(false)
+  useEffect(
+    () => {
+      const handleScroll = () => {
+        if (window.scrollY >= window.innerHeight) {
+          setScrolled(true)
+        } else {
+          setScrolled(false)
+        }
+      }
+
+      window.addEventListener("scroll", handleScroll)
+      return () => window.removeEventListener("scroll", handleScroll)
+    }, []
+  )
+
   return (
     <>
-      <div className='bg-[#FBC322] sticky top-0 z-50'>
+      <div className={`sticky top-0 z-50 ${scrolled ? "bg-fff" : "bg-[#FBC322] "}`}>
         <div className='flex gap-4 bg-white w-40 md:w-50 py-3 px-3 justify-center mx-auto rounded-b-full shadow-[0_0_11px_-1px_rgba(0,0,0,0.25)]'>
           <a href="#">
             <i className="fa-solid fa-cart-shopping text-2xl md:text-3xl"></i>
@@ -60,6 +78,8 @@ function App() {
       </div>
 
       <div>
+        <ProductCard />
+        <ProductCard />
         <ProductCard />
         <ProductCard />
       </div>
