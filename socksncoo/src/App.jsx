@@ -35,8 +35,8 @@ function App() {
           </a>
         </div>
       </div>
-      <div className="min-h-svh bg-contain bg-center bg-no-repeat flex items-end pb-30 bg-[#FBC322]" style={{ backgroundImage: `url(${bgImage})` }}>
-        <button className='mx-auto h-12 bg-black text-white px-7 py-2 rounded-3xl '>
+      <div className="min-h-svh bg-contain bg-center bg-no-repeat flex items-end pb-15 md:pb-30 bg-[#FBC322]" style={{ backgroundImage: `url(${bgImage})` }}>
+        <button className='mx-auto h-12 bg-black opacity-85 text-white px-7 py-2 rounded-3xl '>
           start shopping
           <i className="fa-solid fa-arrow-right mt-1 ml-3"></i>
         </button>
