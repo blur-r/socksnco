@@ -80,7 +80,7 @@ function App() {
         </div> */}
       </div>
 
-      <div>
+      <div className='flex flex-wrap gap-3 px-3 md:px-10'>
         <ProductCard />
         <ProductCard />
         <ProductCard />
