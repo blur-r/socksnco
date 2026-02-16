@@ -1,6 +1,8 @@
 import bgImage from './assets/IMG_3417.PNG'
 import ProductCard from './component/ProductCard'
 import { useEffect, useState } from 'react'
+import Wishlist from './component/Wishlist'
+import Cart from './component/Cart'
 
 function App() {
 
@@ -20,26 +22,47 @@ function App() {
     }, []
   )
 
+  const [activePanel, setActivePanel] = useState(null)
+
+
+  const toggleCart = () => {
+    setActivePanel(prev => (prev == "cart" ? null : "cart"))
+
+  }
+
+  const toggleWishlist = () => {
+    setActivePanel(prev => (prev == "wishlist" ? null : "wishlist"))
+
+  }
+
   return (
     <>
       <div className={`sticky top-0 z-50 ${scrolled ? "bg-fff" : "bg-[#FBC322] "}`}>
         <div className='flex gap-4 bg-white w-45 md:w-60 py-3 px-3 justify-evenly mx-auto rounded-b-2xl shadow-[0_0_11px_-1px_rgba(0,0,0,0.25)]'>
-          <a href="#">
+          <button onClick={toggleCart}>
             <i className="fa-solid fa-cart-shopping text-xl md:text-2xl"></i>
-          </a>
+          </button>
           <a href="#">
+            <i className="fa-solid fa-phone text-xl md:text-2xl"></i>
+          </a>
+          <button onClick={toggleWishlist}>
             <i className="fa-solid fa-heart text-xl md:text-2xl"></i>
-          </a>
-          <a href="#">
-            <i className="fa-solid fa-envelope text-xl md:text-2xl"></i>
-          </a>
+          </button>
         </div>
       </div>
-      <div className="min-h-svh bg-contain bg-center bg-no-repeat flex items-end pb-15 md:pb-30 bg-[#FBC322]" style={{ backgroundImage: `url(${bgImage})` }}>
-        <button className='mx-auto h-12 bg-black opacity-85 text-white px-7 py-2 rounded-3xl '>
+      <div className="relative min-h-svh flex bg-contain bg-center bg-no-repeat pb-15 md:pb-30 bg-[#FBC322]" style={{ backgroundImage: `url(${bgImage})` }}>
+        <button className='mx-auto h-12 bg-black opacity-85 text-white px-7 py-2 rounded-3xl mt-auto'>
           start shopping
           <i className="fa-solid fa-arrow-right mt-1 ml-3"></i>
         </button>
+
+
+        {/* cart */}
+        {activePanel === 'cart' && <Cart />}
+
+        {/* wislist */}
+        {activePanel === "wishlist" && <Wishlist />}
+
       </div>
 
       <div className='flex flex-wrap justify-center gap-5 md:gap-10 my-10 '>
