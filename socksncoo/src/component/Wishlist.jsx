@@ -2,7 +2,7 @@ import WishlistCard from "./WishlistCard"
 
 function Wishlist() {
     return (
-        <div className="bg-white w-[65%] md:w-[30%] h-[93%] fixed right-0 top-12.5 z-60 p-3 pt-5">
+        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12.5 z-60 p-3 pt-5 rounded-l-2xl">
 
             <div className="flex justify-between items-center">
                 <p className="text-2xl md:text-3xl text-center font-bold">your wishlist</p>

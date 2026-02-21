@@ -2,7 +2,7 @@ import CartCard from "./CartCard"
 
 function Cart() {
     return (
-        <div className="bg-[#f2f2f2] w-[65%] md:w-[30%] h-[93%] fixed left-0 top-12.5 z-60 p-3 pt-5">
+        <div className="bg-[#f2f2f2] w-[70%] md:w-[30%] h-[93%] fixed left-0 top-12.5 z-60 p-3 pt-5 rounded-r-2xl">
 
             <div className="flex justify-between items-center">
                 <p className="text-2xl md:text-3xl text-center font-bold">your cart</p>
