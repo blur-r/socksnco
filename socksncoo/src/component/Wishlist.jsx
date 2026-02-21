@@ -16,7 +16,7 @@ function Wishlist() {
                 <WishlistCard />
             </div>
 
-            <div className="bg-[#f2f2f2] h-[22%] md:h-[21%] rounded-xl flex flex-col items-center justify-evenly -mx-3">
+            <div className="bg-[#f2f2f2] h-[22%] md:h-[21%] rounded-xl flex flex-col items-center justify-evenly px-3 -mx-3">
                 <div className="flex gap-7  items-center">
                     <p className="text-xl font-bold">total</p>
                     <p className="text-xl font-bold">-</p>
