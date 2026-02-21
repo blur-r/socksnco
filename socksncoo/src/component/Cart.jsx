@@ -2,14 +2,14 @@ import CartCard from "./CartCard"
 
 function Cart() {
     return (
-        <div className="bg-[#f2f2f2] w-[65%] md:w-[30%] h-full fixed left-0 top-0 z-60 p-3 pt-5">
+        <div className="bg-[#f2f2f2] w-[65%] md:w-[30%] h-[93%] fixed left-0 top-12.5 z-60 p-3 pt-5">
 
             <div className="flex justify-between items-center">
                 <p className="text-2xl md:text-3xl text-center font-bold">your cart</p>
                 <p>3 items</p>
             </div>
             <hr className="mt-2" />
-            <div className="pt-7 flex flex-wrap gap-2 overflow-y-scroll h-[70%] mb-4">
+            <div className="pt-7 flex flex-wrap gap-2 justify-evenly overflow-y-scroll h-[70%] mb-4">
                 <CartCard />
                 <CartCard />
                 <CartCard />
