@@ -1,9 +1,9 @@
 import pdImage from '../assets/Screenshot 2025-04-23 190723.png'
 
-function ProductCard() {
+function WishlistCard() {
     return (
         <>
-            <div className=' w-full md:max-w-70 p-5'>
+            <div className=' w-full md:max-w-90 p-5'>
                 <div className='relative'>
                     <img src={pdImage} alt="" className="w-full rounded-sm" />
 
@@ -24,4 +24,4 @@ function ProductCard() {
     )
 }
 
-export default ProductCard
+export default WishlistCard

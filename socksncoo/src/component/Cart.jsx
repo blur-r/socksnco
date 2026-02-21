@@ -9,7 +9,10 @@ function Cart() {
                 <p>3 items</p>
             </div>
             <hr className="mt-2" />
-            <div className="pt-7 flex flex-col gap-3 overflow-y-scroll h-[70%] mb-4">
+            <div className="pt-7 flex flex-wrap gap-2 overflow-y-scroll h-[70%] mb-4">
+                <CartCard />
+                <CartCard />
+                <CartCard />
                 <CartCard />
                 <CartCard />
                 <CartCard />
@@ -28,8 +31,8 @@ function Cart() {
                 </button>
 
                 <button className={`flex items-center w-full md:w-[80%]  justify-center text-center gap-2 text-sm px-7 py-2 shadow-[0_0_11px_-1px_rgba(0,0,0,0.25)] rounded-md  sm:font-semibold sm:px-2 bg-[#4B5563] text-white hover:bg-[#6a778a]`}>
-                    <i className="fas fa-shopping-bag"></i>
-                    clear cart
+                    <i class="fa-regular fa-trash-can"></i>
+                    empty cart
                 </button>
             </div>
 

@@ -2,14 +2,12 @@ import pdImage from '../assets/Screenshot 2025-04-23 190723.png'
 
 function CartCard() {
     return (
-        <div className='flex gap-4 bg-white rounded-xl pr-3'>
-            <img src={pdImage} alt="" className="w-[30%] rounded-xl" />
-            <div className='flex flex-col gap-3.5 justify-center w-[55%]'>
-                <div className='flex w-full justify-between items-center'>
-                    <p className='text-2xl font-semibold'>nike socks</p>
-                    <i class="fa-solid fa-trash text-red-400"></i>
-                </div>
-                <p className='text-xl font-bold'>#200</p>
+        <div className='flex gap-2 bg-white rounded-sm h-34 w-full md:w-fit '>
+            <img src={pdImage} alt="" className="w-[50%] rounded-l-md" />
+            <div className='flex flex-col gap-3.5 justify-center pr-2'>
+                <p className='text-lg font-semibold'>nike socks</p>
+                <p className='text-sm font-bold'>#200</p>
+                <i class="fa-solid fa-trash text-red-400"></i>
             </div>
         </div>
     )

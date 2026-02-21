@@ -67,11 +67,11 @@ function App() {
 
       <div className='flex flex-wrap justify-center gap-5 md:gap-10 my-10 '>
 
-        <div className='bg-[#F3F4F6] w-40 h-14 md:w-40 md:h-40 py-6 rounded-sm md:rounded-2xl flex justify-evenly md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_0_11px_0px_rgba(0,0,0,0.25)]'>
-          <div className='bg-[#f9f0d5] rounded-full w-12 h-12 md:w-20 md:h-20 flex justify-center items-center'>
+        <div className='bg-[#FBC322] w-40 h-14 md:w-40 md:h-40 py-6 rounded-sm md:rounded-2xl flex justify-evenly md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_0_11px_0px_rgba(0,0,0,0.25)]'>
+          <div className='bg-white rounded-full w-12 h-12 md:w-20 md:h-20 flex justify-center items-center'>
             <i class="fa-solid fa-socks text-xl md:text-3xl text-[#FBC322]"></i>
           </div>
-          <p className='text-md md:text-xl font-bold'>socks</p>
+          <p className='text-md md:text-xl font-bold text-white'>socks</p>
         </div>
 
         <div className='bg-[#f2f2f2] w-40 h-14 md:w-40 md:h-40 py-6 rounded-sm md:rounded-2xl flex justify-evenly md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_0_11px_-1px_rgba(0,0,0,0.25)]'>
@@ -103,7 +103,8 @@ function App() {
         </div> */}
       </div>
 
-      <div className='flex flex-wrap gap-3 px-3 md:px-10'>
+      <div className='flex flex-wrap gap-3 px-3 md:px-5'>
+        <ProductCard />
         <ProductCard />
         <ProductCard />
         <ProductCard />
