@@ -3,6 +3,7 @@ import ProductCard from './component/ProductCard'
 import { useEffect, useState } from 'react'
 import Wishlist from './component/Wishlist'
 import Cart from './component/Cart'
+import Contact from './component/Contact'
 
 function App() {
 
@@ -103,6 +104,8 @@ function App() {
         <ProductCard />
         <ProductCard />
       </div>
+
+      <Contact />
     </>
   )
 }
