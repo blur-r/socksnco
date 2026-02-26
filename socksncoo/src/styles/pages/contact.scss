@@ -185,6 +185,11 @@ form button {
     text-decoration: none;
 }
 
+.socials {
+    display: flex;
+    gap: 10px;
+}
+
 @media (max-width: 960px) {
     .email-me {
         gap: 10px;

@@ -1,0 +1,147 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Cotton Socks",
+      "image": "/images/socks1.jpg",
+      "price": 5500,
+      "category": "socks"
+    },
+    {
+      "id": 2,
+      "name": "Striped Crew Socks",
+      "image": "/images/socks2.jpg",
+      "price": 6200,
+      "category": "socks"
+    },
+    {
+      "id": 3,
+      "name": "Ankle Sports Socks",
+      "image": "/images/socks3.jpg",
+      "price": 4800,
+      "category": "socks"
+    },
+    {
+      "id": 4,
+      "name": "Wool Comfort Socks",
+      "image": "/images/socks4.jpg",
+      "price": 7500,
+      "category": "socks"
+    },
+    {
+      "id": 5,
+      "name": "Breathable Mesh Socks",
+      "image": "/images/socks5.jpg",
+      "price": 5300,
+      "category": "socks"
+    },
+
+    {
+      "id": 6,
+      "name": "Silver Minimal Ring",
+      "image": "/images/ring1.jpg",
+      "price": 18000,
+      "category": "rings"
+    },
+    {
+      "id": 7,
+      "name": "Gold Statement Ring",
+      "image": "/images/ring2.jpg",
+      "price": 25000,
+      "category": "rings"
+    },
+    {
+      "id": 8,
+      "name": "Matte Black Ring",
+      "image": "/images/ring3.jpg",
+      "price": 21000,
+      "category": "rings"
+    },
+    {
+      "id": 9,
+      "name": "Textured Band Ring",
+      "image": "/images/ring4.jpg",
+      "price": 19500,
+      "category": "rings"
+    },
+    {
+      "id": 10,
+      "name": "Slim Stack Ring",
+      "image": "/images/ring5.jpg",
+      "price": 16000,
+      "category": "rings"
+    },
+
+    {
+      "id": 11,
+      "name": "Cuban Link Chain",
+      "image": "/images/chain1.jpg",
+      "price": 42000,
+      "category": "chains"
+    },
+    {
+      "id": 12,
+      "name": "Thin Rope Chain",
+      "image": "/images/chain2.jpg",
+      "price": 36000,
+      "category": "chains"
+    },
+    {
+      "id": 13,
+      "name": "Box Chain Necklace",
+      "image": "/images/chain3.jpg",
+      "price": 39000,
+      "category": "chains"
+    },
+    {
+      "id": 14,
+      "name": "Figaro Chain",
+      "image": "/images/chain4.jpg",
+      "price": 45000,
+      "category": "chains"
+    },
+    {
+      "id": 15,
+      "name": "Minimal Bar Chain",
+      "image": "/images/chain5.jpg",
+      "price": 33000,
+      "category": "chains"
+    },
+
+    {
+      "id": 16,
+      "name": "Leather Bracelet",
+      "image": "/images/accessory1.jpg",
+      "price": 14000,
+      "category": "accessories"
+    },
+    {
+      "id": 17,
+      "name": "Beaded Wrist Accessory",
+      "image": "/images/accessory2.jpg",
+      "price": 12000,
+      "category": "accessories"
+    },
+    {
+      "id": 18,
+      "name": "Metal Cuff Bracelet",
+      "image": "/images/accessory3.jpg",
+      "price": 17000,
+      "category": "accessories"
+    },
+    {
+      "id": 19,
+      "name": "Minimal Key Holder",
+      "image": "/images/accessory4.jpg",
+      "price": 9000,
+      "category": "accessories"
+    },
+    {
+      "id": 20,
+      "name": "Pendant Charm",
+      "image": "/images/accessory5.jpg",
+      "price": 11000,
+      "category": "accessories"
+    }
+  ]
+}

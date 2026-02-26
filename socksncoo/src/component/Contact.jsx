@@ -3,26 +3,26 @@ function Contact() {
         <>
             <section className="contact">
                 <h1 className="about-title">
-                    Get in <span className="yellow">Touch</span>
+                    got questions?
                 </h1>
                 <hr className="contact-hr" />
-                <p className="contact-text">Have a project in mind or want to discuss potential collaboration? Feel free to reach
+                <p className="contact-text">got a question about some products or you need to make an enquiry, feel free to reach
                     out!</p>
                 <div className="contact-container">
                     <div className="contact-form">
-                        <p>Send me a message</p>
+                        <p>send me a message</p>
                         <form action="">
                             <div className="form-field">
-                                <label for="">Your Name</label>
-                                <input type="text" name="" id="" placeholder="Gadus Gadus" />
+                                <label for="">name</label>
+                                <input type="text" name="" id="" placeholder="gadus gadus" />
                             </div>
                             <div className="form-field">
-                                <label for="">Your Email</label>
-                                <input type="text" name="" id="" placeholder="Gadus Gadus" />
+                                <label for="">email / phone no</label>
+                                <input type="text" name="" id="" placeholder="gadus@gmail.com or 08123456789" />
                             </div>
                             <div className="form-field">
-                                <label for="">Your Message</label>
-                                <textarea name="" id="" placeholder="Tell me about your project or make an inquiry"></textarea>
+                                <label for="">message</label>
+                                <textarea name="" id="" placeholder="ask your question or make an inquiry"></textarea>
                             </div>
                             <button type="submit">Send Message</button>
                         </form>
@@ -33,12 +33,10 @@ function Contact() {
                                 <i className="fa-regular fa-envelope"></i>
                             </div>
                             <div className="email-text">
-                                <p>Email Me</p>
-                                <p>gadus@gmail.com</p>
-                                <p>
-                                    Send Message
-                                    <i className="fa-solid fa-arrow-right"></i>
-                                </p>
+                                <p>email me @</p>
+                                <a href="mailto:hello@example.com?subject=Project%20Inquiry&body=Hi%20there%2C%20I%20want%20to%20ask%20about...">
+                                    gadus@gmail.com
+                                </a>
                             </div>
                         </div>
                         <div className="social-media-contact">
