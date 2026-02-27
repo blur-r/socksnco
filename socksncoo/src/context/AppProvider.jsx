@@ -2,10 +2,11 @@ import { useState } from "react";
 import { AppContext } from "./AppContext";
 
 export function AppProvider({ children }) {
-    const [open, setOpen] = useState(false)
+    const [activePanel, setActivePanel] = useState(null)
+
 
     return (
-        <AppContext.Provider value={{ open, setOpen }}>
+        <AppContext.Provider value={{ activePanel, setActivePanel }}>
             {children}
         </AppContext.Provider>
     )
