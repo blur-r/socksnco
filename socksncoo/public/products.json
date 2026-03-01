@@ -53,21 +53,21 @@
     {
       "id": 8,
       "name": "Matte Black Ring",
-      "image": "../src/assets/ring three.jpg",
+      "image": "../src/assets/ring threee.jfif",
       "price": 21000,
       "category": "rings"
     },
     {
       "id": 9,
       "name": "Textured Band Ring",
-      "image": "../src/assets/ring four.jpg",
+      "image": "../src/assets/ring fourr.jfif",
       "price": 19500,
       "category": "rings"
     },
     {
       "id": 10,
       "name": "Slim Stack Ring",
-      "image": "../src/assets/ring five.jpg",
+      "image": "../src/assets/ring fivee.jfif",
       "price": 16000,
       "category": "rings"
     },
@@ -89,7 +89,7 @@
     {
       "id": 13,
       "name": "Box Chain Necklace",
-      "image": "../src/assets/chain three.jpg",
+      "image": "../src/assets/chain threee.jpg",
       "price": 39000,
       "category": "chains"
     },
@@ -103,7 +103,7 @@
     {
       "id": 15,
       "name": "Minimal Bar Chain",
-      "image": "../src/assets/chain five.jpg",
+      "image": "../src/assets/chain fivee.webp",
       "price": 33000,
       "category": "chains"
     },
@@ -111,7 +111,7 @@
     {
       "id": 16,
       "name": "Leather Bracelet",
-      "image": "/images/accessory1.jpg",
+      "image": "../src/assets/Leather Bracelet.jpg",
       "price": 14000,
       "category": "accessories"
     },
