@@ -1,4 +1,4 @@
-import ProductCard from './component/ProductCard'
+import ProductListing from './component/ProductListing'
 import Wishlist from './component/Wishlist'
 import Cart from './component/Cart'
 import Contact from './component/Contact'
@@ -23,13 +23,7 @@ function App() {
 
       <Categories />
 
-      <div className='flex flex-wrap gap-3 px-3 md:px-5'>
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-      </div>
+      <ProductListing />
 
       <Contact />
 

@@ -11,17 +11,17 @@ function Contact() {
                 <div className="contact-container">
                     <div className="contact-form">
                         <p>send me a message</p>
-                        <form action="">
+                        <form action="" name="contact-form">
                             <div className="form-field">
-                                <label for="">name</label>
+                                <label htmlFor="">name</label>
                                 <input type="text" name="" id="" placeholder="gadus gadus" />
                             </div>
                             <div className="form-field">
-                                <label for="">email / phone no</label>
+                                <label htmlFor="">email / phone no</label>
                                 <input type="text" name="" id="" placeholder="gadus@gmail.com or 08123456789" />
                             </div>
                             <div className="form-field">
-                                <label for="">message</label>
+                                <label htmlFor="">message</label>
                                 <textarea name="" id="" placeholder="ask your question or make an inquiry"></textarea>
                             </div>
                             <button type="submit">Send Message</button>
