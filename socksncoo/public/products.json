@@ -3,35 +3,35 @@
     {
       "id": 1,
       "name": "black nike socks",
-      "image": "../src/assets/black nikes.avif",
+      "image": "/images/black nikes.avif",
       "price": 5500,
       "category": "socks"
     },
     {
       "id": 2,
       "name": "white nike socks",
-      "image": "../src/assets/white nikes.avif",
+      "image": "/images/white nikes.avif",
       "price": 6200,
       "category": "socks"
     },
     {
       "id": 3,
       "name": "grey nike socks",
-      "image": "../src/assets/Grey nikes.jpg",
+      "image": "/images/Grey nikes.jpg",
       "price": 4800,
       "category": "socks"
     },
     {
       "id": 4,
       "name": "Box of nike socks",
-      "image": "../src/assets/box of nikes.jpg",
+      "image": "/images/box of nikes.jpg",
       "price": 7500,
       "category": "socks"
     },
     {
       "id": 5,
       "name": "Breathable Mesh Socks",
-      "image": "../src/assets/socks.webp",
+      "image": "/images/socks.webp",
       "price": 5300,
       "category": "socks"
     },
@@ -39,35 +39,35 @@
     {
       "id": 6,
       "name": "Silver Minimal Ring",
-      "image": "../src/assets/ring one.jpg",
+      "image": "/images/ring one.jpg",
       "price": 18000,
       "category": "rings"
     },
     {
       "id": 7,
       "name": "Gold Statement Ring",
-      "image": "../src/assets/ring two.jpg",
+      "image": "/images/ring two.jpg",
       "price": 25000,
       "category": "rings"
     },
     {
       "id": 8,
       "name": "Matte Black Ring",
-      "image": "../src/assets/ring threee.jfif",
+      "image": "/images/ring threee.jfif",
       "price": 21000,
       "category": "rings"
     },
     {
       "id": 9,
       "name": "Textured Band Ring",
-      "image": "../src/assets/ring fourr.jfif",
+      "image": "/images/ring fourr.jfif",
       "price": 19500,
       "category": "rings"
     },
     {
       "id": 10,
       "name": "Slim Stack Ring",
-      "image": "../src/assets/ring fivee.jfif",
+      "image": "/images/ring fivee.jfif",
       "price": 16000,
       "category": "rings"
     },
@@ -75,35 +75,35 @@
     {
       "id": 11,
       "name": "Cuban Link Chain",
-      "image": "../src/assets/chain one.jpg",
+      "image": "/images/chain one.jpg",
       "price": 42000,
       "category": "chains"
     },
     {
       "id": 12,
       "name": "Thin Rope Chain",
-      "image": "../src/assets/chain two.jpg",
+      "image": "/images/chain two.jpg",
       "price": 36000,
       "category": "chains"
     },
     {
       "id": 13,
       "name": "Box Chain Necklace",
-      "image": "../src/assets/chain threee.jpg",
+      "image": "/images/chain threee.jpg",
       "price": 39000,
       "category": "chains"
     },
     {
       "id": 14,
       "name": "Figaro Chain",
-      "image": "../src/assets/chain four.jpg",
+      "image": "/images/chain four.jpg",
       "price": 45000,
       "category": "chains"
     },
     {
       "id": 15,
       "name": "Minimal Bar Chain",
-      "image": "../src/assets/chain fivee.webp",
+      "image": "/images/chain fivee.webp",
       "price": 33000,
       "category": "chains"
     },
@@ -111,35 +111,35 @@
     {
       "id": 16,
       "name": "Leather Bracelet",
-      "image": "../src/assets/Leather Bracelet.jpg",
+      "image": "/images/Leather Bracelet.jpg",
       "price": 14000,
       "category": "accessories"
     },
     {
       "id": 17,
       "name": "Beaded Wrist Accessory",
-      "image": "../src/assets/Beaded Wrist Accessory.jfif",
+      "image": "/images/Beaded Wrist Accessory.jfif",
       "price": 12000,
       "category": "accessories"
     },
     {
       "id": 18,
       "name": "Metal Cuff Bracelet",
-      "image": "../src/assets/Metal Cuff Bracele.webp",
+      "image": "/images/Metal Cuff Bracele.webp",
       "price": 17000,
       "category": "accessories"
     },
     {
       "id": 19,
       "name": "Minimal Key Holder",
-      "image": "../src/assets/Minimal Key Holder.webp",
+      "image": "/images/Minimal Key Holder.webp",
       "price": 9000,
       "category": "accessories"
     },
     {
       "id": 20,
       "name": "Pendant Charm",
-      "image": "../src/assets/Pendant Charm.webp",
+      "image": "/images/Pendant Charm.webp",
       "price": 11000,
       "category": "accessories"
     }
