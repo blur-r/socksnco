@@ -5,7 +5,7 @@ function ProductCard({ product }) {
         <>
             <div className=' w-full md:max-w-70 p-5'>
                 <div className='relative'>
-                    <img src={product.image} alt="" className="w-full h-60 md:h-48 object-cover  rounded-sm " />
+                    <img src={product.image} alt="" className="w-full h-60 md:h-48 object-fill md:object-cover  rounded-sm " />
 
                     <div className="absolute top-3 right-3 bg-white rounded-full w-6 h-6 px-1">
                         <button className="hover:scale-110 transition-transform duration-200">
