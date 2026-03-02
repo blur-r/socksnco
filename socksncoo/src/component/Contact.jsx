@@ -6,7 +6,7 @@ function Contact() {
                     got questions?
                 </h1>
                 <hr className="contact-hr" />
-                <p className="contact-text">got a question about some products or you need to make an enquiry, feel free to reach
+                <p className="contact-text">do you have questions regarding some products or you need to make an enquiry, feel free to reach
                     out!</p>
                 <div className="contact-container">
                     <div className="contact-form">
@@ -24,7 +24,7 @@ function Contact() {
                                 <label htmlFor="">message</label>
                                 <textarea name="" id="" placeholder="ask your question or make an inquiry"></textarea>
                             </div>
-                            <button type="submit">Send Message</button>
+                            <button type="submit">send message</button>
                         </form>
                     </div>
                     <div className="social-info">

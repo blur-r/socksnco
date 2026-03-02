@@ -1,13 +1,22 @@
-import pdImage from '../assets/Screenshot 2025-04-23 190723.png'
+import { useAppContext } from "../context/AppContextHook"
+function CartCard({ product }) {
 
-function CartCard() {
+    const { removeFromCart } = useAppContext()
+
+    const handleRemove = () => {
+        removeFromCart(product.id)
+    }
+
     return (
-        <div className='flex gap-2 bg-white rounded-sm h-34 w-full md:w-fit '>
-            <img src={pdImage} alt="" className="w-[55%] rounded-l-md" />
-            <div className='flex flex-col gap-3.5 justify-center pr-2'>
-                <p className='text-sm font-semibold'>nike socks</p>
-                <p className='text-sm font-bold'>#200</p>
-                <i class="fa-solid fa-trash text-red-400"></i>
+        <div className='flex gap-2 bg-white rounded-sm h-34 w-full  '>
+            <img src={product.image} alt="" className="w-[50%] rounded-l-md" />
+            <div className='flex flex-col gap-2.5 pt-4 pr-2'>
+                <p className='text-sm font-semibold'>{product.name}</p>
+                <p className='text-xl font-bold'>₦{product.price}</p>
+                <button className='mr-auto' onClick={handleRemove}>
+                    <i class="fa-solid fa-trash text-red-400"></i>
+                </button>
+
             </div>
         </div>
     )

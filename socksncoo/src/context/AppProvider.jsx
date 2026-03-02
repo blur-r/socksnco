@@ -11,7 +11,6 @@ export function AppProvider({ children }) {
     console.log("AppProvider component rendered")
 
     useEffect(() => {
-        console.log("useEffect ran")
         const fetchProducts = async () => {
             try {
                 setLoading(true)
@@ -19,7 +18,6 @@ export function AppProvider({ children }) {
                 const response = await fetch("/products.json", { cache: "no-store" })
                 if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`)
                 const data = await response.json()
-                console.log("Fetched products:", data)
                 setProducts(data.products)
             } catch (err) {
                 console.error("Fetch failed:", err)
@@ -35,6 +33,53 @@ export function AppProvider({ children }) {
 
     const filteredProducts = products.filter(p => p.category === category)
 
+    const [cart, setCart] = useState(() => {
+        const stored = localStorage.getItem("cart")
+        return stored ? JSON.parse(stored) : []
+    })
+    useEffect(
+        () => {
+            localStorage.setItem("cart", JSON.stringify(cart))
+        }, [cart]
+    )
+
+    const addToCart = (product) => {
+        setCart((prev) => [...prev, product])
+    }
+
+    const removeFromCart = (productId) => {
+        setCart((prev) => prev.filter((product) => product.id !== productId));
+    }
+
+    const isInCart = (productId) => {
+        return cart.some((product) => product.id === productId)
+    }
+
+
+    const [wishlist, setWishlist] = useState(() => {
+        const stored = localStorage.getItem("wishlist")
+        return stored ? JSON.parse(stored) : []
+    })
+
+    useEffect(
+        () => {
+            localStorage.setItem("wishlist", JSON.stringify(wishlist))
+        }, [wishlist]
+    )
+
+    const addToWishlist = (product) => {
+        setWishlist((prev) => [...prev, product])
+    }
+
+    const removeFromWishlist = (productId) => {
+        setWishlist((prev) => prev.filter((product) => product.id !== productId));
+    }
+
+    const isInWishlist = (productId) => {
+        return wishlist.some((product) => product.id === productId)
+    }
+
+
     const value = {
         activePanel,
         setActivePanel,
@@ -43,6 +88,16 @@ export function AppProvider({ children }) {
         setCategory,
         loading,
         error,
+        cart,
+        wishlist,
+        setWishlist,
+        addToCart,
+        setCart,
+        removeFromCart,
+        isInCart,
+        addToWishlist,
+        removeFromWishlist,
+        isInWishlist
     }
 
     return (
