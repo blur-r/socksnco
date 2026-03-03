@@ -44,9 +44,16 @@ function Cart() {
                         </button>
                     </div>
                 </>
-            ) : ((<p className="text-center text-gray-500 text-2xl mt-7">
-                Your cart is empty.
-            </p>))}
+            ) : ((
+                <div className="min-h-full flex justify-center items-center">
+                    <div className="flex flex-col items-center p-8">
+                        <i className="fa-solid fa-cart-shopping text-6xl md:text-8xl text-gray-400 mx-auto opacity-40"></i>
+                        <p className="text-center text-gray-500 text-xl md:text-2xl">
+                            Your cart is empty...
+                        </p>
+                    </div>
+                </div>
+            ))}
 
         </div>
     )

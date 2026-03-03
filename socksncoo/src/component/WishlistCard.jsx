@@ -24,7 +24,7 @@ function WishlistCard({ product }) {
 
     return (
         <>
-            <div className=' w-full md:max-w-90 p-5'>
+            <div className=' w-full md:max-w-90 p-5 border border-gray-200 rounded-sm'>
                 <div className='relative'>
                     <img src={product.image} alt="" className="w-full rounded-sm" />
 
