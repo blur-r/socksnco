@@ -6,6 +6,7 @@ import { useAppContext } from './context/AppContextHook'
 import Nav from './component/Nav'
 import Hero from './component/Hero'
 import Categories from './component/Categories'
+import Footer from './component/Footer'
 
 function App() {
   const { activePanel } = useAppContext()
@@ -26,6 +27,8 @@ function App() {
       <ProductListing />
 
       <Contact />
+      <Footer />
+
 
     </>
   )

@@ -31,14 +31,14 @@ function Wishlist() {
                         <p>{wishlist.length}items</p>
                     </div>
                     <hr className="mt-2" />
-                    <div className="pt-7 flex flex-col items-center gap-3 overflow-y-scroll h-[70%] mb-4">
+                    <div className="pt-7 flex flex-col items-center gap-3 overflow-y-scroll h-[70%]">
                         {wishlist.map((product) => {
                             return <WishlistCard product={product} key={product.id} />
                         })}
 
                     </div>
 
-                    <div className="bg-[#f2f2f2] h-[22%] md:h-[21%] rounded-xl flex flex-col items-center justify-evenly px-3 -mx-3">
+                    <div className="bg-[#f2f2f2] h-[23%] md:h-[24%] flex flex-col items-center justify-evenly px-3 -mx-3 border-t">
                         <div className="flex gap-7  items-center">
                             <p className="text-xl font-bold">total</p>
                             <p className="text-xl font-bold">-</p>
