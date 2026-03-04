@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <>
-            <div>
+            <div className="bg-[#FBC322] h-20 flex items-center justify-center text-white text-sm font-semibold">
                 footer
             </div>
         </>
