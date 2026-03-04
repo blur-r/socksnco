@@ -22,7 +22,7 @@ function Wishlist() {
 
 
     return (
-        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12.5 z-60 p-3 pt-5 rounded-l-2xl">
+        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12.5 z-60 px-3 pt-5 rounded-l-2xl">
 
             {wishlist.length > 0 ? (
                 <>
@@ -45,7 +45,7 @@ function Wishlist() {
                             <p className="text-2xl font-bold">₦{finalTotal}</p>
                         </div>
                         <button onClick={moveToCart} className={`flex items-center justify-center w-full md:w-[80%] text-center gap-2   text-white text-sm px-3 py-2 shadow-md rounded-md sm:font-semibold sm:px-2 bg-[#131922] hover:bg-[#273447]`}>
-                            <i className="fas fa-arrow-right"></i>
+                            <i className="fas fa-arrow-right  mt-1.5"></i>
                             move items to cart
                         </button>
 

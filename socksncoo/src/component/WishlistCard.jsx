@@ -28,11 +28,15 @@ function WishlistCard({ product }) {
                 <div className='relative'>
                     <img src={product.image} alt="" className="w-full rounded-sm" />
 
-                    <div className="absolute top-3 right-3 bg-white rounded-full w-6 h-6 px-1" onClick={handleWishlist}>
+                    {/* <div className="absolute top-3 right-3 bg-white rounded-full w-6 h-6 px-1" onClick={handleWishlist}>
                         <button className="hover:scale-110 transition-transform duration-200">
                             <i className={`fas fa-heart ${isWishlist ? "text-red-500" : "text-gray-400"}`}></i>
                         </button>
-                    </div>
+                    </div> */}
+
+                    <button className="absolute top-1 right-1 bg-white rounded-full w-9 md:h-6 md:w-6 h-9 flex justify-center items-center hover:scale-110 transition-transform duration-200" onClick={handleWishlist}>
+                        <i className={`fas fa-heart text-center text-xl md:text-sm  ${isWishlist ? "text-red-500" : "text-gray-400"}`}></i>
+                    </button>
                 </div >
 
                 <div className='mt-2 flex flex-col gap-2'>

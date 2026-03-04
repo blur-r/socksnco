@@ -11,7 +11,7 @@ function Cart() {
     }
 
     return (
-        <div className="bg-[#f2f2f2] w-[70%] md:w-[30%] h-[93%] fixed left-0 top-12.5 z-60 p-3 pt-5 rounded-r-2xl">
+        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed left-0 top-12.5 z-60 px-3 pt-5 rounded-r-2xl">
 
             {cart.length > 0 ? (
                 <>
@@ -27,14 +27,14 @@ function Cart() {
                         })}
                     </div>
 
-                    <div className="bg-white h-[22%] md:h-[21%] rounded-xl flex flex-col items-center justify-evenly px-3">
+                    <div className="bg-[#f2f2f2] h-[22%] md:h-[21%] rounded-xl flex flex-col items-center justify-evenly px-3 -mx-3 -mb-3">
                         <div className="flex gap-7  items-center">
                             <p className="text-xl font-bold">total</p>
                             <p className="text-xl font-bold">-</p>
                             <p className="text-2xl font-bold">₦{finalTotalPrice}</p>
                         </div>
-                        <button className={`flex items-center justify-center w-full md:w-[80%] text-center gap-2   text-white text-sm px-3 py-2 shadow-md rounded-md sm:font-semibold sm:px-2 bg-[#131922] hover:bg-[#273447]`}>
-                            <i className="fas fa-arrow-right"></i>
+                        <button className={`flex items-center justify-center w-full md:w-[80%] text-center gap-2 text-white text-sm px-3 py-2 shadow-md rounded-md sm:font-semibold sm:px-2 bg-[#131922] hover:bg-[#273447]`}>
+                            <i className="fas fa-arrow-right mt-1.5"></i>
                             proceed to checkout
                         </button>
 
