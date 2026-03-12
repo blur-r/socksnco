@@ -20,7 +20,7 @@ function Cart() {
                         <p>{cart.length} items</p>
                     </div>
                     <hr className="mt-2" />
-                    <div className="pt-7 flex flex-col gap-2 overflow-y-scroll h-[70%] ">
+                    <div className="pt-7 pb-4 flex flex-col gap-2 overflow-y-scroll h-[70%] ">
 
                         {cart.map((product) => {
                             return <CartCard product={product} key={product.id} />

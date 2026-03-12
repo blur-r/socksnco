@@ -28,10 +28,10 @@ function Wishlist() {
                 <>
                     <div className="flex justify-between items-center">
                         <p className="text-2xl md:text-3xl text-center font-bold">your wishlist</p>
-                        <p>{wishlist.length}items</p>
+                        <p>{wishlist.length} items</p>
                     </div>
                     <hr className="mt-2" />
-                    <div className="pt-7 flex flex-col items-center gap-3 overflow-y-scroll h-[70%]">
+                    <div className="pt-7 pb-4 flex flex-col items-center gap-3 overflow-y-scroll h-[70%]">
                         {wishlist.map((product) => {
                             return <WishlistCard product={product} key={product.id} />
                         })}
