@@ -32,7 +32,7 @@ const Nav = () => {
     return (
         <>
 
-            <div className={`sticky top-0 z-50 ${scrolled ? "bg-fff" : "bg-[#FBC322] "}`}>
+            <div className={`sticky top-0 z-50 ${scrolled ? "" : "bg-[#FBC322] "}`}>
                 <div className='flex gap-4 bg-white w-45 md:w-60 py-3 px-3 justify-evenly mx-auto rounded-b-2xl shadow-[0_0_11px_-1px_rgba(0,0,0,0.25)]'>
                     <button onClick={toggleCart} className="relative inline-flex">
                         {cart.length > 0 && (
