@@ -7,14 +7,19 @@ import Nav from './component/Nav'
 import Hero from './component/Hero'
 import Categories from './component/Categories'
 import Footer from './component/Footer'
+import { useRef } from 'react'
 
 function App() {
   const { activePanel } = useAppContext()
+  const aboutRef = useRef(null);
+
 
   return (
     <>
       <Nav />
-      <Hero />
+      <Hero scrollToCategories={() => {
+        aboutRef.current.scrollIntoView({ behavior: "smooth" });
+      }} />
 
       {/* cart */}
       {activePanel === 'cart' && <Cart />}
@@ -22,7 +27,7 @@ function App() {
       {/* wislist */}
       {activePanel === "wishlist" && <Wishlist />}
 
-      <Categories />
+      <Categories ref={aboutRef} />
 
       <ProductListing />
 

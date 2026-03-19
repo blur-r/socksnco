@@ -23,7 +23,8 @@ function ProductCard({ product }) {
 
     return (
         <>
-            <div className=' w-full md:max-w-70 p-5'>
+            {/* <div className=' w-full md:max-w-70 p-5'> */}
+            <div className='p-5'>
                 <div className='relative'>
                     <img src={product.image} alt="" className="w-full h-60 md:h-48 object-fill md:object-cover  rounded-sm " />
 

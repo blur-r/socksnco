@@ -1,11 +1,12 @@
 import { useAppContext } from "../context/AppContextHook"
+import { forwardRef } from 'react'
 
-const Categories = () => {
+const Categories = forwardRef((props, ref) => {
     const { setCategory, category } = useAppContext()
 
     return (
         <>
-            <div className='flex flex-wrap justify-center gap-5 md:gap-10 my-10 '>
+            <div className='flex flex-wrap justify-center gap-5 md:gap-10 my-10 ' ref={ref}>
 
                 <button
                     onClick={() => setCategory("socks")}
@@ -58,6 +59,6 @@ const Categories = () => {
             </div>
         </>
     )
-}
+})
 
 export default Categories
