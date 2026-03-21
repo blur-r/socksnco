@@ -1,0 +1,63 @@
+.banner {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    /* or match your theme */
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* subtle fade on edges (premium feel) */
+.banner::before,
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+}
+
+.banner::before {
+    left: 0;
+    background: linear-gradient(to right, #111, transparent);
+}
+
+.banner::after {
+    right: 0;
+    background: linear-gradient(to left, #111, transparent);
+}
+
+.banner-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.banner-item {
+    margin: 0 40px;
+    white-space: nowrap;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* seamless animation */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .banner-item {
+        font-size: 12px;
+        margin: 0 20px;
+    }
+}
