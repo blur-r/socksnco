@@ -2,14 +2,12 @@
     width: 100%;
     overflow: hidden;
     background: #111;
-    /* or match your theme */
     color: #fff;
     padding: 10px 0;
     position: relative;
     margin-top: 20px;
 }
 
-/* subtle fade on edges (premium feel) */
 .banner::before,
 .banner::after {
     content: "";
@@ -44,7 +42,6 @@
     text-transform: uppercase;
 }
 
-/* seamless animation */
 @keyframes scroll {
     from {
         transform: translateX(0);
