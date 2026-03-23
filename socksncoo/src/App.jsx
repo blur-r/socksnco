@@ -10,8 +10,9 @@ import Footer from './component/Footer'
 import { useRef } from 'react'
 
 function App() {
-  const { activePanel } = useAppContext()
+  const { activePanel, setActivePanel } = useAppContext()
   const aboutRef = useRef(null);
+  const closePanel = () => setActivePanel(null)
 
 
   return (
@@ -21,11 +22,29 @@ function App() {
         aboutRef.current.scrollIntoView({ behavior: "smooth" });
       }} />
 
-      {/* cart */}
-      {activePanel === 'cart' && <Cart />}
 
-      {/* wislist */}
-      {activePanel === "wishlist" && <Wishlist />}
+      {activePanel && (
+        <div className='overlay' onClick={closePanel}>
+          {activePanel === 'cart' && (
+            <div onClick={(e) => e.stopPropagation()}>
+              <Cart />
+            </div>
+          )}
+
+          {activePanel === 'wishlist' && (
+            <div onClick={(e) => e.stopPropagation()}>
+              <Wishlist />
+            </div>
+          )}
+
+        </div>
+      )}
+
+
+      {/* {activePanel === 'cart' && <Cart />}
+
+
+      {activePanel === "wishlist" && <Wishlist />} */}
 
       <Categories ref={aboutRef} />
 

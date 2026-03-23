@@ -22,7 +22,7 @@ function Wishlist() {
 
 
     return (
-        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12.5 z-60 px-3 pt-5 rounded-l-2xl">
+        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12 z-60 px-3 pt-5 rounded-l-2xl">
 
             {wishlist.length > 0 ? (
                 <>
@@ -38,7 +38,7 @@ function Wishlist() {
 
                     </div>
 
-                    <div className="bg-[#f2f2f2] h-[23%] md:h-[24%] flex flex-col items-center justify-evenly px-3 -mx-3 border-t">
+                    <div className="bg-[#f2f2f2] h-[24%] md:h-[25%] flex flex-col items-center justify-evenly px-3 -mx-3 border-t">
                         <div className="flex gap-7  items-center">
                             <p className="text-xl font-bold">total</p>
                             <p className="text-xl font-bold">-</p>
