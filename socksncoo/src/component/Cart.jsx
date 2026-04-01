@@ -19,7 +19,7 @@ function Cart() {
 
             {cart.length > 0 ? (
                 <>
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-between items-center w-full">
                         <p className="text-2xl md:text-3xl text-center font-bold">your cart</p>
                         <p>{cart.length} items</p>
                     </div>
@@ -29,9 +29,6 @@ function Cart() {
                         {cart.map((product) => {
                             return <CartCard product={product} key={product.id} />
                         })}
-                        {/* {Array.isArray(cart) && cart.map((product) => (
-                            <CartCard product={product} key={product.id} />
-                        ))} */}
                     </div>
 
                     <div className="bg-[#f2f2f2] h-[24%] md:h-[25%] flex flex-col items-center justify-evenly px-3 -mx-3 -mb-3  border-t">
