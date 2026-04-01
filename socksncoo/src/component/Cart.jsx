@@ -12,7 +12,31 @@ function Cart() {
     const clearCart = () => {
         setCart([])
     }
-    console.log(cart)
+
+    const buildWhatsAppMessage = () => {
+        let message = "Hello, I’d like to place an order:%0A%0A";
+
+        cart.forEach((item, index) => {
+            message += `${index + 1}. ${item.name}%0A`;
+            message += `Quantity: ${item.quantity || 1}%0A`;
+            message += `Price: ₦${item.price}%0A%0A`;
+        });
+
+        message += `Total: ₦${finalTotalPrice}%0A%0A`;
+        message += "Thank you.";
+
+        return message;
+    };
+
+    const handleWhatsAppCheckout = () => {
+        const phoneNumber = "2348088466463";
+
+        const message = buildWhatsAppMessage();
+
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
+
+        window.open(url, "_blank");
+    };
 
     return (
         <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed left-0 top-12 z-60 px-3 pt-5 rounded-r-2xl">
@@ -37,9 +61,9 @@ function Cart() {
                             <p className="text-xl font-bold">-</p>
                             <p className="text-2xl font-bold">₦{finalTotalPrice}</p>
                         </div>
-                        <button className={`flex items-center justify-center w-full md:w-[80%] text-center gap-2 text-white text-sm px-3 py-2 shadow-md rounded-md sm:font-semibold sm:px-2 bg-[#131922] hover:bg-[#273447]`}>
+                        <button onClick={handleWhatsAppCheckout} className={`flex items-center justify-center w-full md:w-[80%] text-center gap-2 text-white text-sm px-3 py-2 shadow-md rounded-md sm:font-semibold sm:px-2 bg-[#131922] hover:bg-[#273447]`}>
                             <i className="fas fa-arrow-right mt-1"></i>
-                            proceed to checkout
+                            order via whatsapp
                         </button>
 
                         <button onClick={clearCart} className={`flex items-center w-full md:w-[80%]  justify-center text-center gap-2 text-sm px-7 py-2 shadow-[0_0_11px_-1px_rgba(0,0,0,0.25)] rounded-md  sm:font-semibold sm:px-2 bg-[#4B5563] text-white hover:bg-[#6a778a]`}>
