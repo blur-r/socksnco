@@ -29,7 +29,7 @@ function Cart() {
     };
 
     const handleWhatsAppCheckout = () => {
-        const phoneNumber = "2348088466463";
+        const phoneNumber = "2348161797243";
 
         const message = buildWhatsAppMessage();
 
