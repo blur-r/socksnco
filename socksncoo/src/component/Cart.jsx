@@ -4,11 +4,15 @@ import { useAppContext } from "../context/AppContextHook"
 function Cart() {
 
     const { cart, setCart } = useAppContext()
-    const totalPrice = cart.reduce((acc, item) => acc + item.price, 0)
+    // const totalPrice = cart.reduce((acc, item) => acc + item.price * item.quantity)
+    const totalPrice = Array.isArray(cart)
+        ? cart.reduce((acc, item) => acc + item.price * (item.quantity || 1), 0)
+        : 0;
     const finalTotalPrice = totalPrice.toFixed(2)
     const clearCart = () => {
         setCart([])
     }
+    console.log(cart)
 
     return (
         <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed left-0 top-12 z-60 px-3 pt-5 rounded-r-2xl">
@@ -25,6 +29,9 @@ function Cart() {
                         {cart.map((product) => {
                             return <CartCard product={product} key={product.id} />
                         })}
+                        {/* {Array.isArray(cart) && cart.map((product) => (
+                            <CartCard product={product} key={product.id} />
+                        ))} */}
                     </div>
 
                     <div className="bg-[#f2f2f2] h-[24%] md:h-[25%] flex flex-col items-center justify-evenly px-3 -mx-3 -mb-3  border-t">

@@ -8,7 +8,7 @@ export function AppProvider({ children }) {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
 
-    console.log("AppProvider component rendered")
+    // console.log("AppProvider component rendered")
 
     useEffect(() => {
         const fetchProducts = async () => {
@@ -33,18 +33,51 @@ export function AppProvider({ children }) {
 
     const filteredProducts = products.filter(p => p.category === category)
 
+    // const [cart, setCart] = useState(() => {
+    //     const stored = localStorage.getItem("cart")
+    //     return stored ? JSON.parse(stored) : []
+    // })
+
+    // const [cart, setCart] = useState(() => {
+    //     try {
+    //         const stored = localStorage.getItem("cart");
+    //         const parsed = stored ? JSON.parse(stored) : [];
+
+    //         // ✅ Ensure it's actually an array
+    //         return Array.isArray(parsed) ? parsed : [];
+    //     } catch {
+    //         return [];
+    //     }
+    // });
+
     const [cart, setCart] = useState(() => {
-        const stored = localStorage.getItem("cart")
-        return stored ? JSON.parse(stored) : []
-    })
+        try {
+            const stored = localStorage.getItem("cart");
+            const parsed = stored ? JSON.parse(stored) : [];
+
+            // ✅ Ensure each item has a quantity
+            const migrated = Array.isArray(parsed)
+                ? parsed.map(item => ({ ...item, quantity: item.quantity || 1 }))
+                : [];
+
+            return migrated;
+        } catch {
+            return [];
+        }
+    });
+
     useEffect(
         () => {
             localStorage.setItem("cart", JSON.stringify(cart))
         }, [cart]
     )
 
+    // useEffect(() => {
+    //     setCart([]);
+    // }, []);
+
     const addToCart = (product) => {
-        setCart((prev) => [...prev, product])
+        setCart((prev) => [...prev, { ...product, quantity: 1 }])
     }
 
     const removeFromCart = (productId) => {
