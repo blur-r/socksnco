@@ -2,7 +2,7 @@ const ScrollingBanner = () => {
     const items = [
         "Premium Cotton Socks",
         "✦",
-        "Rings • Chains • Accessories",
+        "Rings • Chains • Shades",
         "✦",
         "Elevate Your Style",
         "✦",

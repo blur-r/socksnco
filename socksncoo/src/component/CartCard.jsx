@@ -34,7 +34,7 @@ function CartCard({ product }) {
 
     return (
         <div className='flex gap-2 bg-white rounded-sm h-34 w-full border border-gray-300'>
-            <img src={product.image} alt="" className="w-[50%] rounded-l-md  border-r border-black-100" />
+            <img src={product.image} alt="" className="w-[50%] rounded-l-md  border-r border-black-100 object-cover" />
             <div className='flex flex-col gap-1.5 pt-1.5 pl-0 md:pl-2'>
                 <p className='text-sm font-semibold'>{product.name}</p>
                 <p className='text-xl font-bold'>₦{product.price}</p>

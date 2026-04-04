@@ -31,12 +31,12 @@ function ProductCard({ product }) {
                 <div className='relative'>
                     <img src={product.image} alt="" className="w-full h-60 md:h-48 object-cover md:object-cover  rounded-sm " />
 
-                    <button className="absolute top-1 right-1 bg-white rounded-full w-9 md:h-6 md:w-6 h-9 flex justify-center items-center hover:scale-110 transition-transform duration-200" onClick={handleWishlist}>
+                    <button className="cursor-pointer absolute top-1 right-1 bg-white rounded-full w-9 md:h-6 md:w-6 h-9 flex justify-center items-center hover:scale-110 transition-transform duration-200" onClick={handleWishlist}>
                         <i className={`fas fa-heart text-center text-xl md:text-sm  ${isWishlist ? "text-red-500" : "text-gray-400"}`}></i>
                     </button>
 
                     <button
-                        className="absolute top-1 left-1 bg-white rounded-full w-9 h-9 md:w-6 md:h-6 flex justify-center items-center hover:scale-110 transition-transform duration-200"
+                        className="cursor-pointer absolute top-1 left-1 bg-white rounded-full w-9 h-9 md:w-6 md:h-6 flex justify-center items-center hover:scale-110 transition-transform duration-200"
                         onClick={() => setShowModal(true)}
                     >
                         <i className="fas fa-expand text-gray-600 text-lg md:text-sm"></i>
@@ -46,7 +46,7 @@ function ProductCard({ product }) {
                 <div className='mt-2 flex flex-col gap-2'>
                     <p className='text-md font-semibold'>{product.name}</p>
                     <p className='text-2xl text-[#FBC322] font-bold'>₦{product.price}</p>
-                    <button className='bg-[#F2F2F2] py-2 px-3 rounded-sm font-semibold flex gap-2 items-center justify-center' onClick={handleCart}>
+                    <button className='bg-[#F2F2F2] cursor-pointer py-2 px-3 rounded-sm font-semibold flex gap-2 items-center justify-center' onClick={handleCart}>
                         <i className="fas fa-shopping-cart"></i>
                         {isCart ? "remove from cart" : "add to cart"}
                     </button>

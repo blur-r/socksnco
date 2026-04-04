@@ -10,7 +10,7 @@ const Categories = forwardRef((props, ref) => {
 
                 <button
                     onClick={() => setCategory("socks")}
-                    className={`w-45 h-14 md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
+                    className={`w-45 cursor-pointer h-14 md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
     ${category === "socks" ? "bg-[#FBC322]" : "bg-[#f2f2f2]"}`}
                 >
                     <div className={`rounded-full w-12 h-12 md:w-20 md:h-20 flex justify-center items-center 
@@ -22,7 +22,7 @@ const Categories = forwardRef((props, ref) => {
 
                 <button
                     onClick={() => setCategory("rings")}
-                    className={`w-45 h-14 md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
+                    className={`w-45 h-14 cursor-pointer md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
     ${category === "rings" ? "bg-[#FBC322]" : "bg-[#f2f2f2]"}`}
                 >
                     <div className={`rounded-full w-12 h-12 md:w-20 md:h-20 flex justify-center items-center 
@@ -34,7 +34,7 @@ const Categories = forwardRef((props, ref) => {
 
                 <button
                     onClick={() => setCategory("chains")}
-                    className={`w-45 h-14 md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
+                    className={`w-45 cursor-pointer h-14 md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
     ${category === "chains" ? "bg-[#FBC322]" : "bg-[#f2f2f2]"}`}
                 >
                     <div className={`rounded-full w-12 h-12 md:w-20 md:h-20 flex justify-center items-center 
@@ -46,7 +46,7 @@ const Categories = forwardRef((props, ref) => {
 
                 <button
                     onClick={() => setCategory("accessories")}
-                    className={`w-45 h-14 md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
+                    className={`w-45 h-14 cursor-pointer md:w-40 md:h-40 py-7 rounded-sm md:rounded-2xl flex justify-start gap-3 px-4 md:justify-center items-center md:flex-col md:gap-2 border-amber-200 border shadow-[0_3px_6px_-2px_rgba(0,0,0,0.25)] 
     ${category === "accessories" ? "bg-[#FBC322]" : "bg-[#f2f2f2]"}`}
                 >
                     <div className={`rounded-full w-12 h-12 md:w-20 md:h-20 flex justify-center items-center 

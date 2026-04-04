@@ -34,7 +34,7 @@ const Hero = ({ scrollToCategories }) => {
     return (
         <>
             <div className="relative -top-12 min-h-svh flex flex-col bg-contain bg-center bg-no-repeat bg-[#FBC322]" style={{ backgroundImage: `url(${bgImage})` }}>
-                <button className='mx-auto h-12 bg-[#111]  text-white px-7 py-2 rounded-3xl mt-auto ' onClick={scrollToCategories}>
+                <button className='cursor-pointer mx-auto h-12 bg-[#111]  text-white px-7 py-2 rounded-3xl mt-auto ' onClick={scrollToCategories}>
                     start shopping
                     <i className="fa-solid fa-arrow-right mt-1 ml-3"></i>
                 </button>
