@@ -1,4 +1,5 @@
 import { useAppContext } from "../context/AppContextHook"
+import { useState } from "react"
 function ProductCard({ product }) {
 
     const { addToCart, removeFromCart, isInCart, addToWishlist, isInWishlist, removeFromWishlist } = useAppContext()
@@ -21,21 +22,24 @@ function ProductCard({ product }) {
         }
     }
 
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <>
             {/* <div className=' w-full md:max-w-70 p-5'> */}
             <div className='p-5'>
                 <div className='relative'>
-                    <img src={product.image} alt="" className="w-full h-60 md:h-48 object-fill md:object-cover  rounded-sm " />
-
-                    {/* <div className="absolute top-3 right-3 bg-white rounded-full w-6 h-6 px-1" onClick={handleWishlist}>
-                        <button className="hover:scale-110 transition-transform duration-200 ">
-                            <i className={`fas fa-heart text-center  ${isWishlist ? "text-red-500" : "text-gray-400"}`}></i>
-                        </button>
-                    </div> */}
+                    <img src={product.image} alt="" className="w-full h-60 md:h-48 object-cover md:object-cover  rounded-sm " />
 
                     <button className="absolute top-1 right-1 bg-white rounded-full w-9 md:h-6 md:w-6 h-9 flex justify-center items-center hover:scale-110 transition-transform duration-200" onClick={handleWishlist}>
                         <i className={`fas fa-heart text-center text-xl md:text-sm  ${isWishlist ? "text-red-500" : "text-gray-400"}`}></i>
+                    </button>
+
+                    <button
+                        className="absolute top-1 left-1 bg-white rounded-full w-9 h-9 md:w-6 md:h-6 flex justify-center items-center hover:scale-110 transition-transform duration-200"
+                        onClick={() => setShowModal(true)}
+                    >
+                        <i className="fas fa-expand text-gray-600 text-lg md:text-sm"></i>
                     </button>
                 </div >
 
@@ -47,6 +51,28 @@ function ProductCard({ product }) {
                         {isCart ? "remove from cart" : "add to cart"}
                     </button>
                 </div>
+
+                {showModal && (
+                    <div onClick={() => setShowModal(false)} className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 animate-fadeIn">
+
+                        <div onClick={(e) => e.stopPropagation()} className="relative bg-white p-3 rounded-sm max-w-[90%] max-h-[90%]">
+
+                            <button
+                                className="absolute top-2 right-2 bg-white rounded-full w-8 h-8 flex justify-center items-center shadow"
+                                onClick={() => setShowModal(false)}
+                            >
+                                <i className="fas fa-times text-gray-700"></i>
+                            </button>
+
+                            <img
+                                src={product.image}
+                                alt={product.name}
+                                className="max-h-[80vh] object-contain rounded"
+                            />
+                        </div>
+                    </div>
+                )}
+
             </div>
         </>
     )

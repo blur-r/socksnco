@@ -2,45 +2,45 @@
   "products": [
     {
       "id": 1,
-      "name": "black nike socks",
-      "image": "/images/black nikes.avif",
-      "price": 5500,
+      "name": "box of nike (5 in 1)",
+      "image": "/images/boxed nike socks.jpg",
+      "price": 13000,
       "category": "socks"
     },
     {
       "id": 2,
-      "name": "white nike socks",
-      "image": "/images/white nikes.avif",
-      "price": 6200,
+      "name": "white smiley socks",
+      "image": "/images/white smiley socks.jpg",
+      "price": 3500,
       "category": "socks"
     },
     {
       "id": 3,
-      "name": "grey nike socks",
-      "image": "/images/Grey nikes.jpg",
-      "price": 4800,
+      "name": "black smiley socks",
+      "image": "/images/black smiley socks.jpg",
+      "price": 3500,
       "category": "socks"
     },
     {
       "id": 4,
-      "name": "Box of nike socks",
-      "image": "/images/box of nikes.jpg",
-      "price": 7500,
+      "name": "jordan socks",
+      "image": "/images/jordan socks.jpg",
+      "price": 4000,
       "category": "socks"
     },
     {
       "id": 5,
-      "name": "Breathable Mesh Socks",
-      "image": "/images/socks.webp",
-      "price": 5300,
+      "name": "nike socks (double layered)",
+      "image": "/images/nike socks double.jpg",
+      "price": 4000,
       "category": "socks"
     },
 
     {
       "id": 6,
-      "name": "Silver Minimal Ring",
-      "image": "/images/ring one.jpg",
-      "price": 18000,
+      "name": "ring",
+      "image": "/images/ring 1.jpg",
+      "price": 2000,
       "category": "rings"
     },
     {
@@ -74,73 +74,87 @@
 
     {
       "id": 11,
-      "name": "Cuban Link Chain",
-      "image": "/images/chain one.jpg",
-      "price": 42000,
+      "name": "skull wallet chain",
+      "image": "/images/skull wallet chain.jpg",
+      "price": 18000,
       "category": "chains"
     },
     {
       "id": 12,
-      "name": "Thin Rope Chain",
-      "image": "/images/chain two.jpg",
-      "price": 36000,
+      "name": "chrome heart wallet chain",
+      "image": "/images/chrome heart wallet chain.jpg",
+      "price": 15000,
       "category": "chains"
     },
     {
       "id": 13,
-      "name": "Box Chain Necklace",
-      "image": "/images/chain threee.jpg",
-      "price": 39000,
+      "name": "wallet chain",
+      "image": "/images/wallet chain.jpg",
+      "price": 15000,
       "category": "chains"
     },
     {
       "id": 14,
-      "name": "Figaro Chain",
-      "image": "/images/chain four.jpg",
-      "price": 45000,
+      "name": "chain and bracelet",
+      "image": "/images/chain brace 1.jpg",
+      "price": 18000,
       "category": "chains"
     },
     {
       "id": 15,
-      "name": "Minimal Bar Chain",
-      "image": "/images/chain fivee.webp",
-      "price": 33000,
+      "name": "chain and bracelet",
+      "image": "/images/chain brace 2.jpg",
+      "price": 18000,
       "category": "chains"
     },
 
     {
       "id": 16,
-      "name": "Leather Bracelet",
-      "image": "/images/Leather Bracelet.jpg",
-      "price": 14000,
+      "name": "alte watch",
+      "image": "/images/alte watch.jpg",
+      "price": 25000,
       "category": "accessories"
     },
     {
       "id": 17,
-      "name": "Beaded Wrist Accessory",
-      "image": "/images/Beaded Wrist Accessory.jfif",
+      "name": "nike crossbody bag",
+      "image": "/images/crossbody bag.jpg",
       "price": 12000,
       "category": "accessories"
     },
     {
       "id": 18,
-      "name": "Metal Cuff Bracelet",
-      "image": "/images/Metal Cuff Bracele.webp",
-      "price": 17000,
+      "name": "chrome heart belt",
+      "image": "/images/chrome heart belt.jpg",
+      "price": 25000,
       "category": "accessories"
     },
     {
       "id": 19,
-      "name": "Minimal Key Holder",
-      "image": "/images/Minimal Key Holder.webp",
-      "price": 9000,
+      "name": "chrome heart belt",
+      "image": "/images/chrome heart belt (2).jpg",
+      "price": 25000,
       "category": "accessories"
     },
     {
       "id": 20,
-      "name": "Pendant Charm",
-      "image": "/images/Pendant Charm.webp",
-      "price": 11000,
+      "name": "shades",
+      "image": "/images/shades.jpg",
+      "price": 13000,
+      "category": "accessories"
+    },
+    {
+      "id": 21,
+      "name": "anti blue light glasses",
+      "image": "/images/anti blue light 1.jpg",
+      "price": 13000,
+      "category": "accessories"
+    },
+    {
+      "id": 22,
+      "name": "anti blue light glasses",
+      "image": "/images/anti blue light 2.jpg",
+      "price": 15000,
       "category": "accessories"
     }
   ]
