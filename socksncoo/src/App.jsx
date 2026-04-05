@@ -15,6 +15,7 @@ function App() {
   const [isBtnVisible, setIsBtnVisible] = useState(false)
   const categoriesRef = useRef(null);
   const productListingRef = useRef(null);
+  const contactRef = useRef(null)
   const closePanel = () => setActivePanel(null)
 
   useEffect(() => {
@@ -36,7 +37,9 @@ function App() {
 
   return (
     <>
-      <Nav />
+      <Nav scrollToContact={() => {
+        contactRef.current.scrollIntoView({ behavior: "smooth" });
+      }} />
       <Hero scrollToCategories={() => {
         categoriesRef.current.scrollIntoView({ behavior: "smooth" });
       }} />
@@ -73,7 +76,7 @@ function App() {
 
       <ProductListing ref={productListingRef} />
 
-      <Contact />
+      <Contact ref={contactRef} />
       <Footer />
 
 

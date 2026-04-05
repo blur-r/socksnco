@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useAppContext } from "../context/AppContextHook"
 
-const Nav = () => {
+const Nav = ({ scrollToContact }) => {
     const { setActivePanel, cart, wishlist } = useAppContext()
     const [scrolled, setScrolled] = useState(false)
     useEffect(
@@ -43,7 +43,7 @@ const Nav = () => {
 
                         <i className="fa-solid fa-cart-shopping text-xl md:text-2xl"></i>
                     </button>
-                    <a href="#">
+                    <a onClick={scrollToContact} href="#">
                         <i className="fa-solid fa-phone text-xl md:text-2xl"></i>
                     </a>
                     <button onClick={toggleWishlist} className="cursor-pointer relative inline-flex">

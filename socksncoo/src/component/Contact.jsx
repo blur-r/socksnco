@@ -1,7 +1,9 @@
-function Contact() {
+import { forwardRef } from "react"
+
+const Contact = forwardRef((props, ref) => {
     return (
         <>
-            <section className="contact">
+            <section className="contact" ref={ref}>
                 <h1 className="about-title">
                     got questions?
                 </h1>
@@ -67,7 +69,7 @@ function Contact() {
             </section>
         </>
     )
-}
+})
 
 export default Contact
 
