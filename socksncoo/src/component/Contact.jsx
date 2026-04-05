@@ -39,29 +39,29 @@ function Contact() {
                                 </a>
                             </div>
                         </div>
-                        {/* <div className="social-media-contact">
+                        <div className="social-media-contact">
                             <hr style={{ marginRight: "auto" }} />
                             <div>
                                 <div className="socials">
-                                    <a href="#">
+                                    <a href="http://wa.me/+2348161797243" target="_blank">
                                         <i className="fa-brands fa-whatsapp social-icon"></i>
                                     </a>
-                                    <a href="#">
+                                    <a href="https://www.instagram.com/_rexrexrexrex?igsh=OTN6ZHd6cTExZXk3&utm_source=qr" target="_blank">
                                         <i className="fa-brands fa-instagram social-icon"></i>
                                     </a>
-                                    <a href="#">
+                                    {/* <a href="#">
                                         <i className="fa-brands fa-square-x-twitter"></i>
-                                    </a>
-                                    <a href="#">
+                                    </a> */}
+                                    {/* <a href="#">
                                         <i className="fa-brands fa-linkedin-in social-icon"></i>
-                                    </a>
-                                    <a href="#">
+                                    </a> */}
+                                    {/* <a href="#">
                                         <i className="fa-brands fa-facebook-f social-icon"></i>
-                                    </a>
+                                    </a> */}
                                 </div>
                             </div>
                             <hr style={{ marginLeft: "auto" }} />
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </section>
