@@ -22,7 +22,7 @@ function Wishlist() {
 
 
     return (
-        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12 z-60 px-3 pt-5 rounded-l-2xl">
+        <div className="bg-white w-[70%] md:w-[30%] h-[93%] fixed right-0 top-12.5 z-60 px-3 pt-5 rounded-l-2xl">
 
             {wishlist.length > 0 ? (
                 <>
