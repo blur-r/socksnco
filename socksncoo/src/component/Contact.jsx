@@ -11,7 +11,7 @@ function Contact() {
                 <div className="contact-container">
                     <div className="contact-form">
                         <p>send me a message</p>
-                        <form action="" name="contact-form">
+                        <form action="https://formsubmit.co/1896bca3dafc69f9792fdcfc7d4848b2" name="contact-form">
                             <div className="form-field">
                                 <label htmlFor="">name</label>
                                 <input type="text" name="" id="" placeholder="gadus gadus" />
@@ -35,11 +35,11 @@ function Contact() {
                             <div className="email-text">
                                 <p>email me @</p>
                                 <a href="mailto:hello@example.com?subject=Project%20Inquiry&body=Hi%20there%2C%20I%20want%20to%20ask%20about...">
-                                    gadus@gmail.com
+                                    the.adebayo9@gmail.com
                                 </a>
                             </div>
                         </div>
-                        <div className="social-media-contact">
+                        {/* <div className="social-media-contact">
                             <hr style={{ marginRight: "auto" }} />
                             <div>
                                 <div className="socials">
@@ -61,7 +61,7 @@ function Contact() {
                                 </div>
                             </div>
                             <hr style={{ marginLeft: "auto" }} />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

@@ -45,30 +45,23 @@
     },
     {
       "id": 7,
-      "name": "Gold Statement Ring",
-      "image": "/images/ring two.jpg",
-      "price": 25000,
+      "name": "ring",
+      "image": "/images/rings 2.jpg",
+      "price": "2000 (each)",
       "category": "rings"
     },
     {
       "id": 8,
-      "name": "Matte Black Ring",
-      "image": "/images/ring threee.jfif",
-      "price": 21000,
+      "name": "ring",
+      "image": "/images/rings 3.jpg",
+      "price": "2000 (each)",
       "category": "rings"
     },
     {
       "id": 9,
-      "name": "Textured Band Ring",
-      "image": "/images/ring fourr.jfif",
-      "price": 19500,
-      "category": "rings"
-    },
-    {
-      "id": 10,
-      "name": "Slim Stack Ring",
-      "image": "/images/ring fivee.jfif",
-      "price": 16000,
+      "name": "ring",
+      "image": "/images/rings 4.jpg",
+      "price": "2000 (each)",
       "category": "rings"
     },
 
