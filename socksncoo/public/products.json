@@ -149,6 +149,20 @@
       "image": "/images/anti blue light 2.jpg",
       "price": 15000,
       "category": "accessories"
+    },
+    {
+      "id": 23,
+      "name": "chrome heart eyeglass",
+      "image": "/images/chrome heart glasses 1.jpg",
+      "price": 15000,
+      "category": "accessories"
+    },
+    {
+      "id": 24,
+      "name": "chrome heart eyeglass",
+      "image": "/images/chrome heart glasses 2.jpg",
+      "price": 15000,
+      "category": "accessories"
     }
   ]
 }
