@@ -13,7 +13,7 @@ const Contact = forwardRef((props, ref) => {
                 <div className="contact-container">
                     <div className="contact-form">
                         <p>send me a message</p>
-                        <form action="https://formsubmit.co/1896bca3dafc69f9792fdcfc7d4848b2" name="contact-form">
+                        <form action="https://formsubmit.co/1896bca3dafc69f9792fdcfc7d4848b2" name="contact-form" method="POST">
                             <div className="form-field">
                                 <label htmlFor="">name</label>
                                 <input type="text" name="" id="" placeholder="gadus gadus" />
