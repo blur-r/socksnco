@@ -10,3 +10,58 @@ body {
     background: rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
+
+.tab-btn.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.project-tabs {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 500;
+
+}
+
+.project-tabs button {
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-tabs button:hover {
+    transform: scale(1.08);
+}
+
+@media screen and (max-width: 500px) {
+    .project-tabs {
+        gap: 8px;
+        border-radius: 15px;
+
+    }
+
+    .project-tabs button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .project-tabs {
+        gap: 5px;
+        border-radius: 10px;
+    }
+
+    .project-tabs button {
+        font-size: 11px;
+        font-weight: bold;
+        border-radius: 15px;
+    }
+}

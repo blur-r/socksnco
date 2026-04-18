@@ -27,7 +27,7 @@ function ProductCard({ product }) {
     return (
         <>
             {/* <div className=' w-full md:max-w-70 p-5'> */}
-            <div className='p-5'>
+            <div className='p-5 flex flex-col h-full'>
                 <div className='relative'>
                     <img src={product.image} alt="" className="w-full h-60 md:h-48 object-cover md:object-cover  rounded-sm " />
 
@@ -45,8 +45,9 @@ function ProductCard({ product }) {
 
                 <div className='mt-2 flex flex-col gap-2'>
                     <p className='text-md font-semibold'>{product.name}</p>
+                    {product.desc && <p className='text-sm text-gray-600'>{product.desc}</p>}
                     <p className='text-2xl text-[#FBC322] font-bold'>₦{product.price}</p>
-                    <button className='bg-[#F2F2F2] cursor-pointer py-2 px-3 rounded-sm font-semibold flex gap-2 items-center justify-center' onClick={handleCart}>
+                    <button className='bg-[#F2F2F2] cursor-pointer py-2 px-3 rounded-sm font-semibold flex gap-2 items-center justify-center mt-2' onClick={handleCart}>
                         <i className="fas fa-shopping-cart"></i>
                         {isCart ? "remove from cart" : "add to cart"}
                     </button>

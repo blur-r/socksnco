@@ -12,7 +12,7 @@ const ProductListing = forwardRef((props, ref) => {
         <>
 
             {/* <div className='flex flex-wrap gap-3 px-3 md:px-5'> */}
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-center" ref={ref}>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] items-stretch" ref={ref}>
                 {filteredProducts.map(p => (
                     <ProductCard product={p} key={p.id} />
                 ))}

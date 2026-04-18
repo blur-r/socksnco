@@ -9,6 +9,8 @@ import Categories from './component/Categories'
 import Footer from './component/Footer'
 import { useRef, useEffect, useState } from 'react'
 import BackToCategoriesBTN from './component/BackToCategoriesBTN'
+import Cateogries2 from './component/Categories2'
+import Categories3 from './component/Categories3'
 
 function App() {
   const { activePanel, setActivePanel } = useAppContext()
@@ -72,7 +74,11 @@ function App() {
         categoriesRef.current.scrollIntoView({ behavior: "smooth" });
       }} />}
 
-      <Categories ref={categoriesRef} />
+      {/* <Categories ref={categoriesRef} /> */}
+
+      <Cateogries2 ref={categoriesRef} />
+
+      {/* <Categories3 /> */}
 
       <ProductListing ref={productListingRef} />
 

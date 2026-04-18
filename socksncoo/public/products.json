@@ -106,63 +106,135 @@
       "name": "alte watch",
       "image": "/images/alte watch.jpg",
       "price": 25000,
-      "category": "accessories"
+      "category": "others"
     },
     {
       "id": 17,
       "name": "nike crossbody bag",
       "image": "/images/crossbody bag.jpg",
       "price": 12000,
-      "category": "accessories"
+      "category": "others"
     },
     {
       "id": 18,
       "name": "chrome heart belt",
       "image": "/images/chrome heart belt.jpg",
       "price": 25000,
-      "category": "accessories"
+      "category": "others"
     },
     {
       "id": 19,
       "name": "chrome heart belt",
       "image": "/images/chrome heart belt (2).jpg",
       "price": 25000,
-      "category": "accessories"
+      "category": "others"
     },
     {
       "id": 20,
       "name": "shades",
       "image": "/images/shades.jpg",
       "price": 13000,
-      "category": "accessories"
+      "category": "glasses"
     },
     {
       "id": 21,
       "name": "anti blue light glasses",
       "image": "/images/anti blue light 1.jpg",
       "price": 15000,
-      "category": "accessories"
+      "category": "glasses"
     },
     {
       "id": 22,
       "name": "anti blue light glasses",
       "image": "/images/anti blue light 2.jpg",
       "price": 15000,
-      "category": "accessories"
+      "category": "glasses"
     },
     {
       "id": 23,
       "name": "chrome heart eyeglass",
       "image": "/images/chrome heart glasses.jpg",
       "price": 15000,
-      "category": "accessories"
+      "category": "glasses"
     },
     {
       "id": 24,
       "name": "chrome heart eyeglass",
       "image": "/images/chrome heart glasses 2.jpg",
       "price": 15000,
-      "category": "accessories"
+      "category": "glasses"
+    },
+    {
+      "id": 25,
+      "name": "round engraved locket",
+      "image": "/images/locket round.jpg",
+      "price": 19500,
+      "category": "customized",
+      "desc": "production - 3-5 days"
+    },
+    {
+      "id": 26,
+      "name": "round locket necklace",
+      "image": "/images/round locket.jpg",
+      "price": 25000,
+      "category": "customized",
+      "desc": "production - 4-5 weeks "
+    },
+    {
+      "id": 27,
+      "name": "heart shaped engraved locket",
+      "image": "/images/locket heart.jpg",
+      "price": 19500,
+      "category": "customized",
+      "desc": "production - 3-5 days"
+    },
+    {
+      "id": 28,
+      "name": "heart shaped  locket necklace",
+      "image": "/images/heart locket.jpg",
+      "price": 25000,
+      "category": "customized",
+      "desc": "production - 4-5 weeks "
+    },
+    {
+      "id": 29,
+      "name": "two in one necklace",
+      "image": "/images/two in one neckpiece.jpg",
+      "price": 16500,
+      "category": "customized",
+      "desc": "production - 4-5 weeks "
+    },
+    {
+      "id": 30,
+      "name": "customized necklace (rose gold, gold, silver)",
+      "image": "/images/customized necklace.jpg",
+      "price": 15000,
+      "category": "customized",
+      "desc": "production - 4-5 days"
+    },
+    {
+      "id": 31,
+      "name": "engraved bracelet (black/silver/gold)",
+      "image": "/images/engraved bracelet.jpg",
+      "price": 15000,
+      "category": "customized",
+      "desc": "production - 3-5 days"
+    },
+    {
+      "id": 32,
+      "name": "engraved bracelet",
+      "image": "/images/customized bracelet.jpg",
+      "price": 14000,
+      "category": "customized",
+      "desc": "production - 3-5 days"
+    },
+    {
+      "id": 33,
+      "name": "engraved casio watch",
+      "image": "/images/customized wristwatch.jpg",
+      "price": 23000,
+      "category": "customized",
+      "desc": "production - 3-5 days"
     }
   ]
 }
